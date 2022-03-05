@@ -1,12 +1,18 @@
 # NFTs - markeplaces project
 
-Hypothesis testing: H0 - buying in solana (SOL) is more profitable than using ethereum (ETH)
-
 Step1:
-extract data from "top market valued NFTs" - last 30days; datasource =  opensea and solsea 
-
-Data from solsea extracted using selenium
-Data from opensea extracted via API
+select datasource for solana and ethereum networks (solsea and opensea)
 
 Step2: 
-check growth and cross reference with token valuation (in terms of USD)
+extract data for the NFTs with highst voilume - last 30days
+
+- data from solsea extracted using selenium
+- data from opensea extracted via API
+
+Step2: 
+clean data and compare both dataframes
+
+Step3:
+check value of both tokens and perform hypothesis testing: 
+  H0 - buying in solana (SOL) is more profitable than using ethereum (ETH)
+  H1 - buying in solana (SOL) is less profitable than using ethereum (ETH)

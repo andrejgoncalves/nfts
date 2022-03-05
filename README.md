@@ -1,7 +1,10 @@
 # nfts
 nft marketplaces project
 
-Extract data for top markte valued NFTs in two main marketplaces (one on ethereum network - opensea ; the other for solana - solsea)
+Extract data from "top market valued NFTs" -last 30days 
+
+Data sources = opensea and solsea 
+(main marketplaces for both ethereum and solana networks)
 
 Data from solsea extracted using selenium
 Data from opensea extracted via API

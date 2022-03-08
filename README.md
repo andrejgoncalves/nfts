@@ -13,11 +13,8 @@ Step2:
 clean data and compare both dataframes
 
 Step3:
-Knowing that SOL = 90$ and ETH = 2660$, then SOL to ETH ratio =  1:30
+Knowing that SOL = 90$ and ETH = 2660$, then hypothesis testing:
 
-Hypothesis testing:
-  H0 - total volume of SOL divided by total volume of ETH > ratio; 
-  H1 - total volume of SOL divided by total volume of ETH <= ratio
-  
-H0: Média Sol (USD) <= Média ETH (USD)
-H1: Média Sol (USD) > Média ETH (USD)
+  H0 - Average Sol (USD) <= Average ETH (USD)
+  H1 - Average Sol (USD) > Average ETH (USD)
+

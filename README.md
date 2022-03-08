@@ -13,6 +13,7 @@ Step2:
 clean data and compare both dataframes
 
 Step3:
-check value of both tokens and perform hypothesis testing: 
-  H0 - buying in solana (SOL) is more profitable than using ethereum (ETH)
-  H1 - buying in solana (SOL) is less profitable than using ethereum (ETH)
+Knowing that SOL = 90$ and ETH = 2660$, then hypothesis testing:
+
+  H0 -  growth in SOL collections less than or equal ETH 
+  H1 - growth in SOL collections greater than ETH

@@ -15,6 +15,5 @@ clean data and compare both dataframes
 Step3:
 Knowing that SOL = 90$ and ETH = 2660$, then hypothesis testing:
 
-  H0 - growth in ETH collections greater than or equal SOL
-  H1 - growth in ETH collections less than SOL 
-
+  H0 -  growth in SOL collections less than or equal ETH 
+  H1 - growth in SOL collections greater than ETH

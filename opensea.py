@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[6]:
 
 
 get_ipython().run_line_magic('matplotlib', 'inline')
@@ -9,7 +9,7 @@ import requests
 import pandas as pd
 
 
-# In[2]:
+# In[7]:
 
 
 def nfts_data(collections):
@@ -33,7 +33,7 @@ def nfts_data(collections):
     return nfts_data
 
 
-# In[3]:
+# In[8]:
 
 
 #Create dictionary with top30 observed collections
@@ -71,33 +71,33 @@ collections = {"Karafuru": nfts_data("karafuru"),
         "Decentraland": nfts_data("decentraland")} 
 
 
-# In[4]:
+# In[9]:
 
 
 data = pd.concat(list(collections.values()))
 #data
 
 
-# In[5]:
+# In[10]:
 
 
 list(collections.keys())
 data['Title'] = list(collections.keys())
 
 
-# In[6]:
+# In[11]:
 
 
 data = data.reset_index(drop=True)
 
 
-# In[7]:
+# In[12]:
 
 
 data.drop('index', axis=1, inplace=True)
 
 
-# In[8]:
+# In[13]:
 
 
 first_column = data.pop('Title')
@@ -110,12 +110,18 @@ data = data.rename(columns=
                      "count": "Items"})
 
 
-# In[10]:
+# In[14]:
 
 
-data = data.round(1)
+data = data.round(2)
 
 data.head()
+
+
+# In[15]:
+
+
+data.to_csv('opensea.csv', index = False)
 
 
 # In[ ]:

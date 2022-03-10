@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[9]:
+# In[1]:
 
 
 from selenium import webdriver
@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
 
 
-# In[10]:
+# In[2]:
 
 
 # Create webdriver object
@@ -25,7 +25,7 @@ s = Service(chromedriver)
 driver = webdriver.Chrome(service=s, options=option)
 
 
-# In[11]:
+# In[3]:
 
 
 # Get the website
@@ -33,14 +33,14 @@ driver = webdriver.Chrome(service=s, options=option)
 driver.get("https://solsea.io/collection-statistics")
 
 
-# In[40]:
+# In[11]:
 
 
 headers = driver.find_elements_by_xpath('//th[@class="table-header__StatisticsTable_2uROi "]')
 nfts = driver.find_elements_by_xpath('//td[@class="table-data__StatisticsRow_1rG9E undefined"]')
 
 
-# In[41]:
+# In[12]:
 
 
 headers_list = []
@@ -52,13 +52,13 @@ for nft in range(len(nfts)):
     nfts_list.append(nfts[nft].text)
 
 
-# In[88]:
+# In[13]:
 
 
 headers_list
 
 
-# In[55]:
+# In[14]:
 
 
 df = {element:[] for element in headers_list} 
@@ -88,26 +88,50 @@ for element in nfts_list:
     counter += 1 
 
 
-# In[87]:
+# In[15]:
 
 
 import pandas as pd
+import numpy as np
 data = pd.DataFrame(df)
 
 
-# In[ ]:
+# In[16]:
 
 
 data.set_index('Title   ')
 data = data.drop(['#   '], axis=1)
 data = data.rename(columns=
-                   {"Floor   ": "Floor Price"})
+                   {"Title   ": "Title", 
+                   "30dSales   ": "30dSales",
+                    "30dAvg Price   ": "30dAvg Price",
+                    "Floor   ": "Floor Price",
+                   "Items   ": "Items"})
 
 
-# In[86]:
+# In[18]:
 
+
+data['30dVolume'] = data['30dVolume'].apply(
+    lambda x: x.replace(' Ⓞ', ''))
+data['30dAvg Price'] = data['30dAvg Price'].apply(
+    lambda x: x.replace(' Ⓞ', ''))
+data['Floor Price'] = data['Floor Price'].apply(
+    lambda x: x.replace(' Ⓞ', '')) 
+
+
+# In[19]:
+
+
+data = data.round(1)
 
 data.head()
+
+
+# In[20]:
+
+
+data.to_csv('solsea.csv', index = False)
 
 
 # In[ ]:

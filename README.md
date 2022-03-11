@@ -19,7 +19,7 @@ Knowing that SOL <100$ and ETH >2500$ (as of March22) , then hypothesis testing:
   H1 - growth in SOL collections less than or equal ETH
 
 Step4:
-Build a tableau viz with relevant info
+Build a [tableau viz](https://public.tableau.com/app/profile/andrejgoncalves/viz/nfts_market/marketplaces?publish=yes) with relevant info
 
 ![image](https://user-images.githubusercontent.com/56920684/157866463-8e0921e1-f266-416b-9029-9311ae456045.png)
 

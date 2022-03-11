@@ -1,14 +1,15 @@
 # Project Roadmap
 
 * **Step 1**: 
-*    * select data sources:
+    * select data sources:
         * [opensea](https://opensea.io/) - for ethereum NFTs  
         * [solsea](https://solsea.io/collection-statistics) - for solana NFTs
 
+
 * **Step 2**:  
-extract data for the NFTs with the highest transactional volume in the last 30days (as of March22)
-  * data from solsea extracted using [selenium](https://www.selenium.dev/)
-  * data from opensea extracted via [API](https://docs.opensea.io/reference/api-overview)
+       * extract data for the NFTs with the highest transactional volume in the last 30days (as of March22):
+              * data from solsea extracted using [selenium](https://www.selenium.dev/)
+              * data from opensea extracted via [API](https://docs.opensea.io/reference/api-overview)
 
 * **Step 3**: 
 data wragling with pydata stack 

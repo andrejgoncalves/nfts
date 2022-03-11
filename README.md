@@ -1,4 +1,4 @@
-# NFTs marketplaces 
+# Project Roadmap
 
 Step1:
 select datasource for solana and ethereum networks (solsea and opensea)

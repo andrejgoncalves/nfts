@@ -6,11 +6,11 @@ select datasource for solana and ethereum networks (solsea and opensea)
 Step2: 
 extract data for the NFTs with the highest transactional volume in the last 30days (as of March22)
 
-- data from solsea extracted using selenium
-- data from opensea extracted via API
+- data from solsea extracted using [selenium](https://www.selenium.dev/)
+- data from opensea extracted via [API](https://docs.opensea.io/reference/api-overview)
 
 Step2: 
-clean data and compare both dataframes
+data wragling with pydata stack (using jupyter notebook)
 
 Step3:
 Knowing that SOL <100$ and ETH >2500$ (as of March22) , then hypothesis testing:

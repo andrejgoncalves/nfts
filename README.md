@@ -2,7 +2,7 @@
 
 * **Step 1**: 
 *    * select data sources:
-        * [opensea](https://opensea.io/) for ethereum NFTs  
+        * [opensea](https://opensea.io/) - for ethereum NFTs  
         * [solsea](https://solsea.io/collection-statistics) - for solana NFTs
 
 * **Step 2**:  

@@ -1,7 +1,9 @@
 # Project Roadmap
 
 * **Step 1**: 
-select datasource for solana and ethereum networks (solsea and opensea)
+*    * select data sources:
+        * [opensea](https://opensea.io/) for ethereum NFTs  
+        * [solsea](https://solsea.io/collection-statistics) - for solana NFTs
 
 * **Step 2**:  
 extract data for the NFTs with the highest transactional volume in the last 30days (as of March22)

@@ -25,5 +25,5 @@ Build a [tableau viz](https://public.tableau.com/app/profile/andrejgoncalves/viz
 
 Notes: 
 
-opensea logo and colour palette [source](https://docs.opensea.io/docs/logos)
+opensea logo and colour palette can be found in this [source](https://docs.opensea.io/docs/logos)
 

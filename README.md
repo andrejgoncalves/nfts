@@ -1,4 +1,4 @@
-# NFTs - markeplaces project
+# NFTs marketplaces 
 
 Step1:
 select datasource for solana and ethereum networks (solsea and opensea)

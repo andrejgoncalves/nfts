@@ -13,7 +13,7 @@ Step2:
 data wragling with pydata stack (using jupyter notebook)
 
 Step3:
-Knowing that SOL <100$ and ETH >2500$ (as of March22) , then hypothesis testing:
+Hypothesis testing: knowing that SOL <100$ and ETH >2500$ (as of March22), then:
 
   H0 - growth in SOL collections greater than ETH ; 
   H1 - growth in SOL collections less than or equal ETH

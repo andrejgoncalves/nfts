@@ -9,25 +9,25 @@ import numpy as np
 import pandas as pd
 
 
-# In[2]:
+# In[5]:
 
 
-solsea = pd.read_csv("solsea.csv")
-
-
-# In[3]:
-
-
-opensea = pd.read_csv("opensea.csv")
+opensea = pd.read_csv("/Users/jungle/Documents/GitHub/nfts/csv/opensea.csv")
 
 
 # In[4]:
 
 
+solsea = pd.read_csv("/Users/jungle/Documents/GitHub/nfts/csv/solsea.csv")
+
+
+# In[6]:
+
+
 solsea.drop('Unnamed: 0', axis=1, inplace=True)
 
 
-# In[50]:
+# In[7]:
 
 
 #solsea_sample = solsea.sample(15)
@@ -36,7 +36,7 @@ solsea['Growth in %'] = solsea.apply(lambda row: row['30dAvg Price']  / row['Flo
 solsea.head()
 
 
-# In[51]:
+# In[8]:
 
 
 #opensea_sample = opensea.sample(15)
@@ -45,29 +45,28 @@ opensea['Growth in %'] = opensea.apply(lambda row: row['30dAvg Price']  / row['F
 opensea.head()
 
 
-# In[67]:
+# In[9]:
 
-
-#https://www.pythonfordatascience.org/independent-samples-t-test-python/
 
 import researchpy as rp
+#https://www.pythonfordatascience.org/independent-samples-t-test-python/
 
 summary, results = rp.ttest(group1= solsea['Growth in %'], group1_name= "Solsea",
                          group2= opensea['Growth in %'], group2_name= "Opensea")
 print(summary)
 
 
-# In[68]:
-
-
-#H0 - growth in SOL collections greater than ETH ; H1 - growth in SOL collections less than or equal ETH
-ttest_ind(solsea['Growth in %'], opensea['Growth in %'], alternative = "less")
-
-
-# In[74]:
+# In[11]:
 
 
 from scipy.stats import ttest_ind
+#H0 - growth in SOL collections greater than ETH ; H1 - growth in SOL collections less than or equal ETH
+
+ttest_ind(solsea['Growth in %'], opensea['Growth in %'], alternative = "less")
+
+
+# In[12]:
+
 
 alpha = 0.05
 sample = 20

@@ -23,5 +23,5 @@ Build a tableau viz with relevant info.
 
 Notes: 
 
-opensea logo source: https://docs.opensea.io/docs/logos
+opensea logo source: https://docs.opensea.io/docs/logos and colour palette ("hacked" usign https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm)
 solsea logo source: 

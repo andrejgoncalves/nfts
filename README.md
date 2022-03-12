@@ -15,8 +15,8 @@
 
 * **Step 4**: 
    * Hypothesis testing: knowing that SOL <100$ and ETH >2500$ (as of March22), then:
-      * H0 - growth in SOL collections greater than ETH ; 
-      * H1 - growth in SOL collections less than or equal ETH
+      * H0 - growth in SOL collections lesser than ETH ; 
+      * H1 - growth in SOL collections greater than or equal ETH
 
 * **Step 5**: 
    * Build a [tableau viz](https://public.tableau.com/app/profile/andrejgoncalves/viz/nfts_market/marketplaces?publish=yes) with relevant info
